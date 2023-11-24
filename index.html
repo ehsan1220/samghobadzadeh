@@ -138,7 +138,7 @@
           </div>
         </div>
         <div class="creater">
-          <a href="mailto:ehsannadernezhad2019@gmail.com" target="_blank" type="email">
+          <a rel="noopener" href="https://www.linkedin.com/in/ehsan-nadernezhad-41b8a0196" target="_blank">
             <p>created by Ehsan Nadernezhad</p>
           </a>
         </div>
@@ -158,46 +158,23 @@
         menuLinks.forEach(link => {
           link.addEventListener('click', close);
         });
-    
         function show() {
           mainMenu.style.display = 'flex';
           mainMenu.style.top = '0';
         }
-    
         function close() {
           mainMenu.style.top = '-100%';
         }
       });
-      // Check if the device supports hover (typically non-touch devices)
-      if (window.matchMedia('(hover: hover)').matches) {
-        document.querySelectorAll('.dream img').forEach(Image => {
+      document.querySelectorAll('.dream img').forEach(Image => {
         Image.onclick = () => {
-        document.querySelector('.popup-image').style.display = 'block';
-        document.querySelector('.popup-image img').src = Image.getAttribute('src');
+          document.querySelector('.popup-image').style.display = 'block';
+          document.querySelector('.popup-image img').src = Image.getAttribute('src');
         };
       });
-
-        document.querySelector('.popup-image span').onclick = () => {
+      document.querySelector('.popup-image span').onclick = () => {
         document.querySelector('.popup-image').style.display = 'none';
-        };
-      }
-
-      if (Modernizr.touch) {
-        // Code for touch devices
-      } else {
-        // Code for non-touch devices
-        document.querySelectorAll('.dream img').forEach(Image => {
-          Image.onclick = () => {
-            document.querySelector('.popup-image').style.display = 'block';
-            document.querySelector('.popup-image img').src = Image.getAttribute('src');
-          };
-        });
-      
-        document.querySelector('.popup-image span').onclick = () => {
-          document.querySelector('.popup-image').style.display = 'none';
-        };
-      }
-      
+      };
     </script>
   </body>
 </html>
