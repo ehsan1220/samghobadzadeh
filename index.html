@@ -22,7 +22,6 @@
         </nav>
       </div>
       <section id="banner">
-        <img class="logo" src="/photos/samGobadzadeh.png" alt="" />
         <div class="banner-text">
           <h1>Sam Ghobadzadeh</h1>
         </div>
@@ -91,33 +90,36 @@
         </div>
         <div class="ex-context-row">
           <div class="ex-context-col">
-            <p><pre>
-              <ins>Iran </ins>
-              2012:  Sa'adabad Palace, Master Farshchian Museum
-              2013:  Sa'adabad Palace of Fine Arts
-              2014:  Sa'adabad Palace of Fine Arts
-              2015:  Sadaf cultural Center
-              2016:  Sa'adabad Palace
-              2017:  Sa'adabad Palace, Museum of Fine Arts</pre>
-            </p>
+            <br>
+            <ins>Iran </ins>
+            <br><br>
+            <ul>
+            <li>2012:  Sa'adabad Palace, Master Farshchian Museum</li>
+            <li>2013:  Sa'adabad Palace of Fine Arts</li>
+            <li>2014:  Sa'adabad Palace of Fine Arts</li>
+            <li>2015:  Sadaf cultural Center</li>
+            <li>2016:  Sa'adabad Palace</li>
+            <li>2017:  Sa'adabad Palace, Museum of Fine Arts</li>
+            </ul>
             <br>
           </div>
           <div class="ex-context-col">
-            <p><pre>
-              <ins>Outside of Iran:</ins>
-              2014:  American World Championships
-              2015:  invitation to the Swedish exhibition
-              2017:  German exhibition
-              2018:  Germany exhibition
-              2019:  German exhibition
-              2020:  American World Championships
-              2021:  Jackson England competitions
-              2023:  exhibition in Amsterdam, Netherlands
-              2023:  German exhibition
-              2023:  exhibition in Amsterdam, Netherlands
-              2023:  Almirah museum exhibition in the Netherlands
-            </pre>
-            </p>
+            <br>
+            <ins>Outside of Iran:</ins>
+            <br><br>
+            <ul>
+              <li>2014:  American World Championships</li>
+              <li>2015:  invitation to the Swedish exhibition</li>
+              <li>2017:  German exhibition</li>
+              <li>2018:  Germany exhibition</li>
+              <li>2019:  German exhibition</li>
+              <li>2020:  American World Championships</li>
+              <li>2021:  Jackson England competitions</li>
+              <li>2023:  exhibition in Amsterdam, Netherlands</li>
+              <li>2023:  German exhibition</li>
+              <li>2023:  exhibition in Amsterdam, Netherlands</li>
+              <li>2023:  Almirah museum exhibition in the Netherlands</li>
+            </ul>
             <br>
           </div>
         </div>
@@ -144,37 +146,6 @@
         </div>
       </section>
     </footer>
-    <!-- Script --><!-- Script --><!-- Script --><!-- Script -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const mainMenu = document.querySelector('.mainMenu');
-        const closeMenu = document.querySelector('.closeMenu');
-        const openMenu = document.querySelector('.openMenu');
-        const menuLinks = document.querySelectorAll('.mainMenu a');
-    
-        openMenu.addEventListener('click', show);
-        closeMenu.addEventListener('click', close);
-    
-        menuLinks.forEach(link => {
-          link.addEventListener('click', close);
-        });
-        function show() {
-          mainMenu.style.display = 'flex';
-          mainMenu.style.top = '0';
-        }
-        function close() {
-          mainMenu.style.top = '-100%';
-        }
-      });
-      document.querySelectorAll('.dream img').forEach(Image => {
-        Image.onclick = () => {
-          document.querySelector('.popup-image').style.display = 'block';
-          document.querySelector('.popup-image img').src = Image.getAttribute('src');
-        };
-      });
-      document.querySelector('.popup-image span').onclick = () => {
-        document.querySelector('.popup-image').style.display = 'none';
-      };
-    </script>
+    <script src="javaS.js"></script>
   </body>
 </html>
