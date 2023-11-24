@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SamGhobadzadeh</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'> -->
+    <header>
+      <div id="sideNav">
+        <nav>
+          <div class="openMenu"><i class="fa fa-bars"></i></div>
+          <ul class="mainMenu">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#exhibitions">exhibitions</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+          </ul>
+        </nav>
+      </div>
+      <section id="banner">
+        <img class="logo" src="/photos/samGobadzadeh.png" alt="" />
+        <div class="banner-text">
+          <h1>Sam Ghobadzadeh</h1>
+        </div>
+      </section>
+      <section id="biography">
+        <div class="title-text">
+          <h3>Biography:</h3>
+        </div>
+        <div class="bio-context-row">
+          <div class="bio-context-col">
+            <p>I started painting seriously in 2000, in 2001 I pursued painting
+              more professionally when I entered the university of art, and by 
+              attending the classes of Professor Abbas Inanlu and a short course
+               of Professor Morteza Katouzian, I took the style of realism and 
+               photorealism.<br>
+             But my interest in conceptual styles from the very beginning made
+              me tend to my favorite style, Surrealism, and I created works in 
+              this style. I held my first important exhibition in Tehran in 2006
+               at Soreh University of Soreh Art and until today I have held many
+                exhibitions in Iran and several European countries.
+             One of the most important events in the field of painting for me 
+             was participating in the American World Championships in 2015 and 2014,
+              in which I became a finalist. This made me enter European exhibitions. 
+              Currently, I continue my professional activity in the Netherlands.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- portfolio-->
+      <!-- portfolio-->
+      <!-- portfolio-->
+      <section id="portfolio">
+        <div class="heading">
+          <h3>Portfolios:</h3>
+        </div>
+        <div class="box">
+          <div class="dream">
+            <img src="/photos/samghobadzadeh-1.jpg" alt="" />
+            <img src="/photos/samghobadzadeh-2.jpg" alt="" />
+            <img src="/photos/samghobadzadeh-3.jpg" alt="" />
+            <img src="/photos/samghobadzadeh-4.jpg" alt="" />
+          </div>
+          <div class="dream">
+            <img src="/photos/samghobadzadeh-5.jpg" alt="" />
+            <img src="/photos/samghobadzadeh-6.jpg" alt="" />
+            <img src="/photos/samghobadzadeh-7.jpg" alt="" />
+            <img src="/photos/samghobadzadeh-8.jpg" alt="" />
+          </div>
+          <div class="dream">
+            <img src="/photos/samghobadzadeh-9.jpg" alt="" />
+            <img src="/photos/samghobadzadeh-10.jpg" alt="" />
+            <img src="/photos/samghobadzadeh-11.jpg" alt="" />
+            <img src="/photos/samghobadzadeh-12.jpg" alt="" />
+            <img src="/photos/samghobadzadeh-13.jpg" alt="" />
+          </div>
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="/photos/samghobadzadeh-1.jpg" alt="" />
+        </div>
+      </section>
+      <!-- exhibitions --><!-- exhibitions --><!-- exhibitions --><!-- exhibitions -->
+      <section id="exhibitions">
+        <div class="title-text">
+          <h3>Exhibitions:</h3>
+        </div>
+        <div class="ex-context-row">
+          <div class="ex-context-col">
+            <p><pre>
+              <ins>Iran </ins>
+              2012:  Sa'adabad Palace, Master Farshchian Museum
+              2013:  Sa'adabad Palace of Fine Arts
+              2014:  Sa'adabad Palace of Fine Arts
+              2015:  Sadaf cultural Center
+              2016:  Sa'adabad Palace
+              2017:  Sa'adabad Palace, Museum of Fine Arts</pre>
+            </p>
+            <br>
+          </div>
+          <div class="ex-context-col">
+            <p><pre>
+              <ins>Outside of Iran:</ins>
+              2014:  American World Championships
+              2015:  invitation to the Swedish exhibition
+              2017:  German exhibition
+              2018:  Germany exhibition
+              2019:  German exhibition
+              2020:  American World Championships
+              2021:  Jackson England competitions
+              2023:  exhibition in Amsterdam, Netherlands
+              2023:  German exhibition
+              2023:  exhibition in Amsterdam, Netherlands
+              2023:  Almirah museum exhibition in the Netherlands
+            </pre>
+            </p>
+            <br>
+          </div>
+        </div>
+      </section>
+    </header>
+    <footer>
+      <!-- fotter --><!-- fotter --><!-- fotter --><!-- fotter -->
+      <section id="footer">
+        <div class="footer-row">
+          <div class="title-text">
+            <h3>Contact Me:</h3>
+          <div class="mediaBtn">
+            <a href="https://www.instagram.com/sam.ghobadzadeh.art/#" 
+            target="_blank">
+              <img src="/photos/instagram.png" width="35px" alt="">
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="creater">
+          <a href="mailto:ehsannadernezhad2019@gmail.com" target="_blank" type="email">
+            <p>created by Ehsan Nadernezhad</p>
+          </a>
+        </div>
+      </section>
+    </footer>
+    <!-- Script --><!-- Script --><!-- Script --><!-- Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const mainMenu = document.querySelector('.mainMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        const openMenu = document.querySelector('.openMenu');
+        const menuLinks = document.querySelectorAll('.mainMenu a');
+    
+        openMenu.addEventListener('click', show);
+        closeMenu.addEventListener('click', close);
+    
+        menuLinks.forEach(link => {
+          link.addEventListener('click', close);
+        });
+    
+        function show() {
+          mainMenu.style.display = 'flex';
+          mainMenu.style.top = '0';
+        }
+    
+        function close() {
+          mainMenu.style.top = '-100%';
+        }
+      });
+      // Check if the device supports hover (typically non-touch devices)
+      if (window.matchMedia('(hover: hover)').matches) {
+        document.querySelectorAll('.dream img').forEach(Image => {
+        Image.onclick = () => {
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = Image.getAttribute('src');
+        };
+      });
+
+        document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+        };
+      }
+
+      if (Modernizr.touch) {
+        // Code for touch devices
+      } else {
+        // Code for non-touch devices
+        document.querySelectorAll('.dream img').forEach(Image => {
+          Image.onclick = () => {
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = Image.getAttribute('src');
+          };
+        });
+      
+        document.querySelector('.popup-image span').onclick = () => {
+          document.querySelector('.popup-image').style.display = 'none';
+        };
+      }
+      
+    </script>
+  </body>
+</html>
