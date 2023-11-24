@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 20px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -17,7 +17,6 @@
 .banner-text h1 {
   font-size: 200%;
 }
-/* 88888888888888888888888888888888888 */
 nav {
   background: #000000;
   color: #fff;
@@ -59,7 +58,6 @@ nav .mainMenu .closeMenu,
   display: none;
   cursor: pointer;
 }
-/* 8888888888888888888888888888888888888888 */
 #biography {
   width: 100%;
   padding: 70px 0;
@@ -92,7 +90,6 @@ nav .mainMenu .closeMenu,
   padding: 20px;
   margin-left: 45px;
 }
-/* PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP */
 #portfolio {
   background: #000000;
   margin: 0;
