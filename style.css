@@ -23,7 +23,6 @@ nav {
   background-color: #000000;
   position: inline-block;
   width: 100%;
-  z-index: 2;
 }
 nav .mainMenu {
   display: flex;
@@ -153,7 +152,6 @@ nav .mainMenu .closeMenu,
   background: rgba(0, 0, 0, 0.9);
   height: 100%;
   width: 100%;
-  z-index: 100;
 }
 #portfolio .popup-image span {
   position: absolute;
@@ -163,7 +161,7 @@ nav .mainMenu .closeMenu,
   font-weight: bolder;
   color: #fff;
   cursor: pointer;
-  z-index: 100;
+/*   z-index: 100; */
 }
 .popup-image img {
   margin: 50px;
@@ -311,7 +309,6 @@ nav .mainMenu .closeMenu,
     right: 0;
     top: 0;
     left: 0;
-    z-index: 10;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -434,7 +431,6 @@ nav .mainMenu .closeMenu,
     margin: 0;
     height: 40vh;
     width: auto;
-    z-index:1;
   }
   #sideNav .mainMenu li:hover {
     background-color: rgb(255, 217, 0);
