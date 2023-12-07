@@ -23,8 +23,9 @@ nav {
   background-color: #000000;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: inline-block;
   width: 100%;
+  z-index: 1;
 }
 nav .mainMenu {
   display: flex;
@@ -35,6 +36,7 @@ nav .mainMenu li {
   margin-left: 5px;
   margin-top: 10px;
   padding: 0;
+  
 }
 nav .mainMenu li a {
   display: inline-block;
